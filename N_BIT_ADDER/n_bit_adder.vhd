@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity n_bit_adder is
 generic(
-N : integer := 4 --ka� tane adder kulln�rsak
+N : integer := 4 --kaç tane adder kullnýrsak
 );
 port(
 a     : in std_logic_vector  (N-1 downto 0);
@@ -28,6 +28,7 @@ carry   : out std_logic
 );
 end component;
 
+-- Burada ara sinyaler anımlandı N+1 bit olamsının nedenide son bit bütün sistemden çıkan cout a eşit	
 signal temp : std_logic_vector (N downto 0) := (others => '0');
 
 
