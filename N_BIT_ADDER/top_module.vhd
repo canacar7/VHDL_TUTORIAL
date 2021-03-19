@@ -18,7 +18,7 @@ architecture arch of top is
 --COMPONENT DECLERATION
 component n_bit_adder is
 generic(
-N : integer := 4 --kaç tane adder kullnırsak
+N : integer := 8 --kaÃ§ tane adder kullnÃ½rsak
 );
 
 port(
